@@ -45,7 +45,7 @@ export function TodoItem({
         <div>
           <input
             className={` m-1 rounded-md border-2   p-4  text-black focus:border-violet-400 focus:outline-none ${
-              inputError ? "bg-red-300" : ""
+              inputError ? "bg-red-300 border-red-400" : ""
             }`}
             type="text"
             value={editedText}

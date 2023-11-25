@@ -48,7 +48,7 @@ export function Modal({ setOpenModal, onFormSubmit }) {
             value={inputValue}
             onChange={(event) => setInputValue(event.target.value)}
             className={`w-full rounded-md border-2  p-2 text-black focus:border-violet-400 focus:outline-none ${
-              inputError ? "bg-red-300" : ""
+              inputError ? "bg-red-300 border-red-400" : ""
             }`}
             type="text"
             id="taskName"
@@ -64,7 +64,7 @@ export function Modal({ setOpenModal, onFormSubmit }) {
             value={selectValue === "" ? "Priority" : selectValue}
             onChange={(event) => setSelectValue(event.target.value)}
             className={`rounded-md  border-2 p-2 text-black focus:border-violet-400 focus:outline-none ${
-              selectError ? "bg-red-300" : ""
+              selectError ? "bg-red-300 border-red-400" : ""
             }`}
             name=""
             id="Priority"
